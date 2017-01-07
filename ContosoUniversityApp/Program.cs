@@ -14,7 +14,7 @@ namespace ContosoUniversityApp
             
             foreach(var item in db.Course)
             {
-                Console.WriteLine(item.Title);
+                Console.WriteLine(item.Title+"\t"+item.Department.Name);
             }
         }
     }
