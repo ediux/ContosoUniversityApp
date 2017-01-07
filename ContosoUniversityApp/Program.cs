@@ -10,6 +10,12 @@ namespace ContosoUniversityApp
     {
         static void Main(string[] args)
         {
+            var db = new ContosoUniversityEntities();
+            
+            foreach(var item in db.Course)
+            {
+                Console.WriteLine(item.Title);
+            }
         }
     }
 }
